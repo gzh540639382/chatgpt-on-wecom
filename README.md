@@ -41,6 +41,8 @@ pip3 install flask
 pip3 install wechatpy
 pycryptodome
 pip3 install --upgrade openai
+pip install itchat
+
 ```
 注：`openai`使用最新版本，需高于等于0.27.0 ，如果之前安装过请单独更新下pip3 install --upgrade openai
 
@@ -85,9 +87,17 @@ python3 app.py
 
 使用nohup命令在后台运行程序：
 
-```bash
+```bash :prot/wechat
+
 touch nohup.out                                   # 首次运行需要新建日志文件                     
 nohup python3 app.py & tail -f nohup.out          # 在后台运行程序并通过日志输出二维码
+
+
+```bash
+企业微信端url ip:prot/wechat
+加入可信ip
+
+
 ```
 
 > **特殊指令：** 用户向应用号发送 **#清除记忆** 即可清空该用户的上下文记忆。 
